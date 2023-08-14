@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Артур Вашеров](https://up.htmlacademy.ru/htmlcss-individual/1/user/2210051).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Лесухин] (https://htmlacademy.ru/profile/id181931).
 
 ---
 
