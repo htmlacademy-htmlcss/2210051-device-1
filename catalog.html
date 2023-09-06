@@ -8,6 +8,7 @@
 
   <body>
     <header class="page-header">
+      <img class="logo" src="#" width="#" height="#" alt="Логотип Девайс">
       <div class="search-wrapper">
         <form action="#" method="get">
           <input type="search" name="search" placeholder="Поиск по сайту">
@@ -18,7 +19,7 @@
       <div class="user-menu">
         <ul class="user-menu-login">
           <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Войти</a>
+            <a class="user-menu-link" href="#">Коля Петухов</a>
           </li>
         </ul>
         <ul class="user-menu-list">
@@ -32,22 +33,46 @@
       </div>
 
       <nav class="main-menu">
-        <ul class="main-menu-navigation">
-          <li class=main-menu-item>
+        <ul class="main-menu-list">
+          <li class="main-menu-item">
             <a class="main-menu-link" href="catalog.html">Каталог товаров</a>
             <button class="toggle-button" type="button">Кнопка</button>
           </li>
-          <li class=main-menu-item>
+          <li class="dropdown-menu-list">
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu-item">
+                <a class="dropdown-menu-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a class="dropdown-menu-link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a class="dropdown-menu-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a class="dropdown-menu-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a class="dropdown-menu-link" href="#">Умные часы</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a class="dropdown-menu-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="main-menu-item">
             <a class="main-menu-link" href="#">Доставка</a>
           </li>
-          <li class=navigation-item>
+          <li class="navigation-item">
             <a class="main-menu-link" href="#">Гарантия</a>
           </li>
-          <li class=main-menu-item>
+          <li class="main-menu-item">
             <a class="main-menu-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
+
     </header>
 
     <main class="main-inner">
@@ -61,13 +86,14 @@
             <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
+
       <section class="product-filter">
         <h2 class="product-filter-title">Фильтр:</h2>
-        <!--Стоиомость пока не размечаю. Правильно?-->
+
         <form class="catalog-filter" action="#" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -148,7 +174,7 @@
               <button class="button-next" type="button">Вперёд</button>
             </li>
           </ul>
-          </div>
+        </div>
       </section>
     </main>
 
