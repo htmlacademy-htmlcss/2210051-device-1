@@ -9,12 +9,12 @@
   <body>
     <header class="page-header">
       <img class="logo" src="#" width="#" height="#" alt="Логотип Девайс">
-      <div class="search-wrapper">
-        <form action="#" method="get">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти"</button>
-        </form>
-      </div>
+
+      <form action="#" method="get">
+        <input type="search" name="search" placeholder="Поиск по сайту">
+        <button class="search-button" type="submit">Найти"</button>
+      </form>
+
 
       <div class="user-menu">
         <ul class="user-menu-login">
@@ -77,47 +77,94 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-      <div class="slider-container">
-        <img class="slider-image" src="#" alt="Квадрокоптер">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
-        <h2>Порхает как бабочка, жалит как пчела!</h2>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <a class="detail-link" href="#">Подробнее</a>
-        <table class="product-description">
-          <tr>
-            <td><b>800</b>м</td>
-            <td><b>50 м</b></td>
-          </tr>
-          <tr>
-            <td>Дальность полета</td>
-            <td>Радиус поражния</td>
-          </tr>
-        </table>
 
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 слайд</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 слайд</span>
-            </button>
-          </li>
-        </ol>
-      </div>
+      <section class="slider">
+        <div class="slider-container">
+          <img class="slider-image" src="#" alt="Квадрокоптер">
+          <h2>Порхает как бабочка, жалит как пчела!</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+            камеру.
+          </p>
+          <a class="detail-link" href="#">Подробнее</a>
+          <table class="product-description">
+            <tr>
+              <td>800 м</td>
+              <td> 50 м</td>
+            </tr>
+            <tr>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="slider-container">
+          <img class="slider-image" src="#" alt="Фитнес-браслет">
+          <h2>Худеем правильно!</h2>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          </p>
+          <a class="detail-link" href="#">Подробнее</a>
+          <table class="product-description">
+            <tr>
+              <td>48 часов</td>
+            </tr>
+            <tr>
+              <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="slider-container">
+          <img class="slider-image" src="#" alt="Селфи-палка">
+          <h2>Делай селфи, как Бен Стиллер! </h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
+            5 кг.
+          </p>
+          <a class="detail-link" href="#">Подробнее</a>
+          <table class="product-description">
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="slider-control">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+
+        <div class="slider-pagination">
+          <ul class="slider-pagination-list">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 слайд</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 слайд</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="catalog-categories">
         <h2 class="visually-hidden">Категории каталога</h2>
@@ -226,38 +273,37 @@
     </main>
 
     <footer class="page-footer">
-      <div class="footer-address">
+      <address class="footer-address">
         <p>Санкт-Петербург, набережная<br>
           реки Карповки, 5, литера П.</p>
-      </div>
-      <div class="footer-services">
-        <ul class="footer-services-item">
-          <li class="footer-services-link">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="footer-services-link">
-            <a href="#">Гарантия</a>
-          <li class="footer-services-link">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="social-container">
-        <ul class="social-container-item">
-          <li class="social-container-link">
-            <a href="https://t.me/htmlacademy"><img src="#" width="#" height="#" alt="Логотип Телеграм"></a><span
-              class="visually-hidden">Телеграм</span>
-          </li>
-          <li class="social-container-link">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" width="#" height="#"
-                alt="Логотип Ютуб"></a><span class="visually-hidden">Ютуб</span>
-          </li>
-          <li class="social-container-link">
-            <a href="https://twitter.com/htmlacademy_ru"><img src="#" width="#" height="#"
-                alt="Логотип Твиттер"></a><span class="visually-hidden">Твиттер</span>
-          </li>
-        </ul>
-      </div>
+      </address>
+
+      <ul class="footer-services-item">
+        <li class="footer-services-link">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer-services-link">
+          <a href="#">Гарантия</a>
+        <li class="footer-services-link">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="social-container-item">
+        <li class="social-container-link">
+          <a href="https://t.me/htmlacademy"><img src="#" width="#" height="#" alt="Логотип Телеграм"></a><span
+            class="visually-hidden">Телеграм</span>
+        </li>
+        <li class="social-container-link">
+          <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" width="#" height="#"
+              alt="Логотип Ютуб"></a><span class="visually-hidden">Ютуб</span>
+        </li>
+        <li class="social-container-link">
+          <a href="https://twitter.com/htmlacademy_ru"><img src="#" width="#" height="#" alt="Логотип Твиттер"></a><span
+            class="visually-hidden">Твиттер</span>
+        </li>
+      </ul>
+
       <div class="footer-tel-wrapper">
         <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
